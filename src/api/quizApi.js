@@ -1,6 +1,6 @@
 export const fetchQuizQuestions = async (amount = 15) => {
   const cacheKey = `quizQuestions_${amount}`;
-  const API_URL = import.meta.env.VITE_QUIZ_API;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   // Check cache in localStorage
   const cachedData = localStorage.getItem(cacheKey);
